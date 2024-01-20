@@ -8,6 +8,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
     <title>Personal Portfolio Website</title>
+    <script src="https://kit.fontawesome.com/36a638c8b4.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="header">
@@ -23,7 +24,7 @@
                 </ul>
             </nav>
             <div class="header-text">
-                <p>Web Developer</p>
+                <p>Unity Developer</p>
                 <h1>Hi, I'm Muhammad <span>Ivan</span> Muntahir<br>From Indonesia</h1>
             </div>
         </div>
@@ -49,9 +50,9 @@
                         </div>
                         <div class="tab-contents active-tab" id="skills">
                             <ul>
-                                <li><span>Unity Engine</span><br>Developing VR/AR Application</li>
+                                <li><span>Unity Engine</span><br>Developing VR/AR Application with Unity</li>
                                 <li><span>Web Development</span><br>Web app Development with Native/PHP Laravel/ReactJS</li>
-                                <li><span>IoT</span><br>Building and Integrating IoT Hardware and Application</li>
+                                <li><span>Mobile Development</span><br>Building a mobile application Android with Java</li>
                             </ul>
                         </div>
                         <div class="tab-contents" id="experience">
@@ -73,9 +74,67 @@
             </div>
         </div>
     </div>
+    <!-- -----------------services------------------- -->
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <h2>AR/VR Development</h2>
+                    <p>Build and develop Augmented Reality or Virtual Reality application with Unity Engine</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Build and develop Web System with Native/PHP Laravel/ReactJS</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Mobile Development</h2>
+                    <p>Build and develop Mobile Apps with Java Android</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+    <!-- -----------portfolio---------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="./images/vr-1.jpeg">
+                    <div class="layer">
+                        <h3>VR Infusion Installation Simulation</h3>
+                        <p>The app provides a virtual immersive medical simulation of infusion installation based on real condition and procedure</p>
+                        <a href="https://youtu.be/kwFk8cWmwNc?si=I7ZZHdb5hBDKOM_d"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/vr-5.jpeg">
+                    <div class="layer">
+                        <h3>VR Surelock Detective Experience</h3>
+                        <p>The app provides a virtual immersive being a detective and inspector to solve and find solution</p>
+                        <a href="https://www.youtube.com/watch?v=bFJiOsEWZ1M"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./images/vr-2.jpeg">
+                    <div class="layer">
+                    <h3>VR On Training Simulation Pupuk Kaltim</h3>
+                        <p>The app provides a virtual immersive as a field operator which simulate production factory based on real condition and procedure</p>
+                        <a href="https://www.youtube.com/watch?v=FlhiGqSuLss"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a> 
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
 
     <script>
-
         var tablinks = document.getElementsByClassName("tab-links");
         var tabcontents = document.getElementsByClassName("tab-contents");
 
@@ -84,8 +143,10 @@
                 tablink.classList.remove("active-link");
             }
             for(tabcontent of tabcontents){
-                tablink.classList.remove("active-tab");
+                tabcontent.classList.remove("active-tab");
             }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
         }
     </script>
 </body>
