@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <title>Personal Portfolio Website</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm Muhammad <span>Ivan</span> Muntahir<br>From Indonesia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------About---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Computer Engineering graduate with specializing in Unity (Virtual Reality,Augmented Reality,3D Game), Web Development (HTML, CSS,
+                        JavaScript, PHP), and IoT development (Arduino, ESP8266, Electronics Module and Sensor). A highly motivated individual and eager to apply a solid foundation of skills to contribute to dynamic projects while maintaining a
+                        commitment to continuous learning and technological growth with a proactive mindset to acquire new skills and stay abreast of emerging
+                        technologies.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education/Training</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Unity Engine</span><br>Developing VR/AR Application</li>
+                                <li><span>Web Development</span><br>Web app Development with Native/PHP Laravel/ReactJS</li>
+                                <li><span>IoT</span><br>Building and Integrating IoT Hardware and Application</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2022 - Current</span><br>Technical Team Member - Wordpress Elementor at Peduli Digital (Part-Time)</li>
+                                <li><span>2022 - 2023</span><br>Unity Developer at PT. Telkom Indonesia (Full-Time)</li>
+                                <li><span>2021</span><br>Web Developer at PT. PAL Indonesia (Internship)</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>BE in Computer Engineering from Politeknik Elektronika Negeri Surabaya</li>
+                                <li><span>2023</span><br>Unity User Programmer Certification at Unity</li>
+                                <li><span>2022</span><br>Front-End Web Development Freshgraduate Academy at Kominfo x Progate</li>
+                                <li><span>2021</span><br>Multiplayer VR Development With Unity at Udemy Course</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tablink.classList.remove("active-tab");
+            }
+        }
+    </script>
+</body>
+</html>
