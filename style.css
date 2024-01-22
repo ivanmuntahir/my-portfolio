@@ -256,6 +256,10 @@ nav ul li a:hover::after{
 .btn:hover{
     background: #ff5757;
 }
+.work-list-vr h4{
+    margin-top: 5px;
+    font-size: 18px;
+}
 .work-list-web{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
@@ -267,6 +271,88 @@ nav ul li a:hover::after{
     margin-top: 5px;
     font-size: 18px;
 }
+
+/* achievement */
+.sub-title-achievement{
+    margin-top: 50px;
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+.achievment-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(100px, 400px));
+    grid-gap: 30px;
+    margin-top: 20px;
+}
+.achievment{
+    border-radius: 10px;
+    position: relative;
+    height: 275px;
+    overflow:hidden;
+}
+.achievment img{
+    width: 100%;
+    border-radius: 10px;
+    display: block;
+    transition: transform 0.5s;
+}
+.achievment-layer{
+    width: 200px;
+    height: 100px;
+    background: linear-gradient(rgba(0,0,0,0.5), #ff5757);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.5s;
+}
+.achievment-layer{
+    font-weight: 500;
+    font-size: 20px;
+}
+.achievment-layer{
+    margin-top: 20px;
+    color: #ff5757;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 20px;
+    background: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+}
+.achievment:hover img{
+    transform: scale(1.2);
+}
+.achievment:hover .layer{
+    height: 100%;
+}
+.btn{
+    display: block;
+    
+    width: fit-content;
+    border: 1px solid #ff5757;
+    
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+} 
+.btn:hover{
+    background: #ff5757;
+}
+
+
 
 /* css for contact */
 .contact-left{
